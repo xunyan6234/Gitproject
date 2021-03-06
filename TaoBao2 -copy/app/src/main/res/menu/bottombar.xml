@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/quanbu"
+        android:title="@string/title_quanbu"
+        android:icon="@drawable/taobao"/>
+
+    <item
+        android:id="@+id/weitao"
+        android:title="@string/title_weitao"
+        android:icon="@drawable/weitao"/>
+
+    <item
+        android:id="@+id/xiaoxi"
+        android:title="@string/title_xiaoxi"
+        android:icon="@drawable/xiaoxi"/>
+
+    <item
+        android:id="@+id/gouwuche"
+        android:title="@string/title_gouwuche"
+        android:icon="@drawable/gouwuche"/>
+
+    <item
+        android:id="@+id/wode"
+        android:title="@string/title_wode"
+        android:icon="@drawable/wode"/>
+</menu>

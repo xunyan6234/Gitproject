@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fafafa"
+    tools:context=".Weitao">
+
+    <RelativeLayout
+        style="@style/weitao_top_bar">
+        <TextView
+            android:id="@+id/weitao_top_bar_text"
+            style="@style/weitao_top_bar_text"
+            android:text="微淘"
+            android:layout_alignParentBottom="true"/>
+        <ImageButton
+            android:id="@+id/weitao_dianzan"
+            style="@style/weitao_top_bar_img"
+            android:src="@mipmap/weitao_dianzan"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="#0000"/>
+        <ImageButton
+            android:id="@+id/weitao_tongxunlu"
+            style="@style/weitao_top_bar_img"
+            android:src="@mipmap/weitao_tongxunlu"
+            android:layout_toLeftOf="@+id/weitao_dianzan"
+            android:layout_alignParentBottom="true"
+            android:background="#0000"/>
+        <ImageButton
+            style="@style/weitao_top_bar_img"
+            android:src="@mipmap/weitao_fangdajing"
+            android:layout_toLeftOf="@+id/weitao_tongxunlu"
+            android:layout_alignParentBottom="true"
+            android:background="#0000"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/weitao_main">
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

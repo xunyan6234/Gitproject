@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation_bar"
+    app:startDestination="@id/wode">
+    <fragment
+        android:id="@+id/quanbu"
+        android:name="com.example.taobao2.Quanbu"
+        android:label="@string/title_quanbu"
+        tools:layout="@layout/quanbu_fragment" />
+
+    <fragment
+        android:id="@+id/wode"
+        android:name="com.example.taobao2.Wode"
+        android:label="@string/title_wode"
+        tools:layout="@layout/wode_fragment" />
+    <fragment
+        android:id="@+id/gouwuche"
+        android:name="com.example.taobao2.Gouwuche"
+        android:label="@string/title_gouwuche"
+        tools:layout="@layout/gouwuche_fragment" />
+    <fragment
+        android:id="@+id/xiaoxi"
+        android:name="com.example.taobao2.Xiaoxi"
+        android:label="@string/title_xiaoxi"
+        tools:layout="@layout/xiaoxi_fragment" />
+    <fragment
+        android:id="@+id/weitao"
+        android:name="com.example.taobao2.Weitao"
+        android:label="@string/title_weitao"
+        tools:layout="@layout/weitao_fragment" />
+
+</navigation>

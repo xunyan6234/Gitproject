@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    tools:context=".Gouwuche">
+
+    <RelativeLayout
+        style="@style/gwc_top_bar">
+        <TextView
+            style="@style/gwc_top_bar_text"
+            android:text="购物车"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            style="@style/gwc_top_bar_text2"
+            android:text="管理"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gouwuche_main">
+
+    </RelativeLayout>
+
+
+</LinearLayout>

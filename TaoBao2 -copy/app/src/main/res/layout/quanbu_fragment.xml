@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    tools:context=".Quanbu">
+    //顶部搜索栏
+    <RelativeLayout
+        style="@style/quanbu_dingbusousuo"
+        android:background="#0000">
+        //二维码
+        <ImageButton
+            android:id="@+id/erweima"
+            style="@style/quanbu_erweima"
+            android:src="@mipmap/erweima"
+            android:background="#0000">
+        </ImageButton>
+        //搜索框
+        <EditText
+            android:id="@+id/sousuo"
+            style="@style/quanbu_sousuokuang"
+            android:layout_toRightOf="@+id/erweima"
+            android:layout_alignBottom="@+id/erweima"
+            android:drawableLeft="@mipmap/fangdajing"
+            android:drawableRight="@mipmap/xiangji"
+            android:text="  观赏竹"
+            android:background="@drawable/shape_corner">
+        </EditText>
+        //红包
+        <ImageButton
+            android:id="@+id/hongbao"
+            style="@style/quanbu_d_d"
+            android:layout_alignBottom="@id/erweima"
+            android:layout_toLeftOf="@+id/huiyuanquanyi"
+            android:layout_marginRight="10dp"
+            android:background="#0000"
+            android:src="@mipmap/hongbao">
+        </ImageButton>
+        //会员权益
+        <ImageButton
+            android:id="@+id/huiyuanquanyi"
+            style="@style/quanbu_d_d"
+            android:layout_alignBottom="@id/erweima"
+            android:layout_alignParentRight="true"
+            android:background="#0000"
+            android:src="@mipmap/huiyuan">
+        </ImageButton>
+    </RelativeLayout>
+
+    //轮播图
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+
+            android:layout_width="350dp"
+            android:layout_height="150dip"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/slideshow_corner">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:layout_gravity="bottom"
+                android:background="#0000"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="图片标题"
+                    android:textColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dip"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:id="@+id/dot_0"
+                        android:layout_width="10dip"
+                        android:layout_height="10dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:background="@drawable/dot_on"/>
+
+                    <View
+                        android:id="@+id/dot_1"
+                        android:layout_width="10dip"
+                        android:layout_height="10dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:background="@drawable/dot_off"/>
+
+                    <View
+                        android:id="@+id/dot_2"
+                        android:layout_width="10dip"
+                        android:layout_height="10dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:background="@drawable/dot_off"/>
+
+                    <View
+                        android:id="@+id/dot_3"
+                        android:layout_width="10dip"
+                        android:layout_height="10dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:background="@drawable/dot_off"/>
+
+                    <View
+                        android:id="@+id/dot_4"
+                        android:layout_width="10dip"
+                        android:layout_height="10dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:background="@drawable/dot_off"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+    //中间菜单栏
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RadioGroup
+            android:id="@+id/centermenuup"
+            style="@style/quanbu_center_menu_radiogroup"
+            android:layout_alignParentBottom="true"
+            android:background="#f0f0f0">
+
+            <RadioButton
+                android:id="@+id/tianmaoxinpin"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:checked="true"
+                android:drawableTop="@mipmap/quanbu_tianmaoxinpin"
+                android:text="日用品"
+                android:textColor="#b4b4b4" />
+
+            <RadioButton
+                android:id="@+id/jinribaokuan"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:checked="true"
+                android:drawableTop="@mipmap/quanbu_jinribaokuan"
+                android:text="工艺品"
+                android:textColor="#b4b4b4" />
+
+            <RadioButton
+                android:id="@+id/tianmaoguoji"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:drawableTop="@mipmap/quanbu_tianmaoguoji"
+                android:text="家具类"
+                android:textColor="#b4b4b4" />
+
+            <RadioButton
+                android:id="@+id/eleme"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:drawableTop="@mipmap/quanbu_eleme"
+                android:text="建材类"
+                android:textColor="#b4b4b4" />
+
+            <RadioButton
+                android:id="@+id/tianmaochaoshi"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:drawableTop="@mipmap/quanbu_tianmaochaoshi"
+                android:text="更多分类"
+                android:textColor="#b4b4b4" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/centermenudown"
+           style="@style/quanbu_center_menu_radiogroup"
+            android:layout_alignParentBottom="true"
+            android:background="#f0f0f0">
+
+            <RadioButton
+                android:id="@+id/chongzhizhongxin"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:checked="true"
+                android:drawableTop="@mipmap/quanbu_chongzhizhongxin"
+                android:text="楠竹"
+                android:textColor="#b4b4b4" />
+
+            <RadioButton
+                android:id="@+id/jipiaojiudian"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:checked="true"
+                android:drawableTop="@mipmap/quanbu_jipiaojiudian"
+                android:text="麻竹"
+                android:textColor="#b4b4b4" />
+
+            <RadioButton
+                android:id="@+id/lingtaojinbi"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:drawableTop="@mipmap/quanbu_lingtaojinbi"
+                android:text="苦竹"
+                android:textColor="#b4b4b4" />
+
+            <RadioButton
+                android:id="@+id/alipaimai"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:drawableTop="@mipmap/quanbu_alipaimai"
+                android:text="斑竹"
+                android:textColor="#b4b4b4" />
+
+            <RadioButton
+                android:id="@+id/taobaochihuo"
+                style="@style/quanbu_center_menu_radiobutton"
+                android:drawableTop="@mipmap/quanbu_taobaochihuo"
+                android:text="更多品种"
+                android:textColor="#b4b4b4" />
+        </RadioGroup>
+
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/quanbu_main">
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="xiaoxi_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#111111</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="xiaoxi_sousuokuang">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">29.9dp</item>
+        <item name="android:layout_marginLeft">18.7dp</item>
+        <item name="android:paddingLeft">5.6dp</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="xiaoxi_t_t">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">18.7dp</item>
+    </style>
+
+    <style name="xiaoxi_weidu">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="xiaoxi_qingchu">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginLeft">21.7dp</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="xiaoxi_touxiang">
+        <item name="android:layout_width">53dp</item>
+        <item name="android:layout_height">53dp</item>
+    </style>
+
+    <style name="xiaoxi_fenge1">
+        <item name="android:layout_width">1.1dp</item>
+        <item name="android:layout_height">43dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="xiaoxi_center_caidan">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">98.11dp</item>
+        <item name="android:layout_marginLeft">13.11dp</item>
+        <item name="android:layout_marginRight">13.11dp</item>
+    </style>
+
+    <style name="xiaoxi_jiaoyi_youhui">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">#111111</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16.8sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">20.6dp</item>
+    </style>
+
+    <style name="xiaoxi_huihua">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">66dp</item>
+        <item name="android:layout_marginRight">13.11dp</item>
+        <item name="android:layout_marginLeft">13.11dp</item>
+    </style>
+
+    <style name="xiaoxi_dianpuming">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#783616</item>
+        <item name="android:layout_marginTop">11.2dp</item>
+        <item name="android:layout_marginLeft">11.2dp</item>
+    </style>
+
+    <style name="xiaoxi_xinxiyulan">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:layout_marginLeft">11.2dp</item>
+        <item name="android:layout_marginTop">3.7dp</item>
+    </style>
+
+    <style name="xiaoxi_shijianxianshi">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">11.2dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+
+</resources>

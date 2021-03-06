@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fafafa"
+    tools:context=".Xiaoxi">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafafa"
+        android:padding="11dp">
+        //消息文字
+        <TextView
+            android:id="@+id/xiaoxi_text"
+            style="@style/xiaoxi_text"
+            android:text="消息" />
+        //消息搜索框
+        <EditText
+            style="@style/xiaoxi_sousuokuang"
+            android:id="@+id/xiaoxi_sousuokuang"
+            android:layout_alignBottom="@+id/xiaoxi_text"
+            android:layout_toRightOf="@id/xiaoxi_text"
+            android:background="@drawable/xiaoxi_sousuokuang"
+            android:drawableLeft="@mipmap/fangdajing"
+            android:text="  搜索" />
+        //通讯录
+        <ImageButton
+            android:id="@+id/tongxunlu"
+            style="@style/xiaoxi_t_t"
+            android:layout_alignBottom="@+id/xiaoxi_text"
+            android:layout_toRightOf="@+id/xiaoxi_sousuokuang"
+            android:background="#0000"
+            android:src="@mipmap/tongxunlu" />
+        //添加好友
+        <ImageButton
+            android:id="@+id/tianjiahaoyou"
+            style="@style/xiaoxi_t_t"
+            android:layout_alignBottom="@+id/xiaoxi_text"
+            android:layout_toRightOf="@+id/tongxunlu"
+            android:background="#0000"
+            android:src="@mipmap/jiahao" />
+        //未读消息数量
+        <TextView
+            android:id="@+id/weiduxiaoxi"
+            style="@style/xiaoxi_weidu"
+            android:layout_below="@+id/xiaoxi_text"
+            android:text="128条未读消息"/>
+        //清除未读
+        <TextView
+            style="@style/xiaoxi_qingchu"
+            android:layout_toRightOf="@+id/weiduxiaoxi"
+            android:layout_below="@+id/xiaoxi_sousuokuang"
+            android:drawableLeft="@mipmap/qingchu"
+            android:text="  清除未读"/>
+
+    </RelativeLayout>
+
+    //中间菜单栏
+    <RelativeLayout
+        style="@style/xiaoxi_center_caidan"
+        android:background="@drawable/xiaoxi_center_bar">
+        //交易物流
+        <TextView
+            style="@style/xiaoxi_jiaoyi_youhui"
+            android:text="  交易物流"
+            android:drawableLeft="@mipmap/jiaoyiwuliu"/>
+        //分割竖线
+        <ImageView
+            android:id="@+id/xiaoxi_fenge1"
+            style="@style/xiaoxi_fenge1"
+            android:background="#d3d3d3"/>
+        //优惠活动
+        <TextView
+            style="@style/xiaoxi_jiaoyi_youhui"
+            android:layout_toRightOf="@+id/xiaoxi_fenge1"
+            android:text="  活动优惠"
+            android:drawableLeft="@mipmap/huodongyouhui"/>
+    </RelativeLayout>
+
+
+    //消息列表
+
+    //会话1
+    <RelativeLayout
+        android:id="@+id/huihua1"
+        style="@style/xiaoxi_huihua"
+        >
+        //头像
+        <com.example.taobao2.RoundImageViewByXfermode
+            android:id="@+id/touxiang1"
+            style="@style/xiaoxi_touxiang"
+            android:background="@drawable/touxiangkuang"
+            android:src="@mipmap/huiyuan88"
+            android:layout_centerVertical="true"/>
+
+        //店铺名
+        <TextView
+            android:id="@+id/dianpu1"
+            style="@style/xiaoxi_dianpuming"
+            android:text="@string/dianpu1"
+            android:layout_toRightOf="@+id/touxiang1" />
+        //信息预览
+        <TextView
+            android:id="@+id/xinxiyulan1"
+            style="@style/xiaoxi_xinxiyulan"
+            android:text="@string/xinxi1"
+            android:layout_toRightOf="@+id/touxiang1"
+            android:layout_below="@+id/dianpu1"/>
+        //时间显示
+        <TextView
+            style="@style/xiaoxi_shijianxianshi"
+            android:text="@string/shijian1"/>
+
+    </RelativeLayout>
+
+    //分割线
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#eeeeee"/>
+
+    //会话2
+    <RelativeLayout
+        android:id="@+id/huihua2"
+        style="@style/xiaoxi_huihua">
+        //头像
+        <com.example.taobao2.RoundImageViewByXfermode
+            android:id="@+id/touxiang2"
+            style="@style/xiaoxi_touxiang"
+            android:src="@mipmap/cainiao"
+            android:layout_centerVertical="true"/>
+        //店铺名
+        <TextView
+            android:id="@+id/dianpu2"
+            style="@style/xiaoxi_dianpuming"
+            android:text="@string/dianpu2"
+            android:layout_toRightOf="@+id/touxiang2" />
+        //信息预览
+        <TextView
+            android:id="@+id/xinxiyulan2"
+            style="@style/xiaoxi_xinxiyulan"
+            android:text="@string/xinxi2"
+            android:layout_toRightOf="@+id/touxiang2"
+            android:layout_below="@+id/dianpu2"/>
+        //时间显示
+        <TextView
+            style="@style/xiaoxi_shijianxianshi"
+            android:text="@string/shijian2"/>
+    </RelativeLayout>
+
+    //分割线
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1.1dp"
+        android:background="#eeeeee"/>
+
+    //会话3
+    <RelativeLayout
+        android:id="@+id/huihua3"
+        style="@style/xiaoxi_huihua">
+        //头像
+        <com.example.taobao2.RoundImageViewByXfermode
+            android:id="@+id/touxiang3"
+            style="@style/xiaoxi_touxiang"
+            android:src="@mipmap/taobaotoutiao"
+            android:layout_centerVertical="true"/>
+        //店铺名
+        <TextView
+            android:id="@+id/dianpu3"
+            style="@style/xiaoxi_dianpuming"
+            android:text="@string/dianpu3"
+            android:layout_toRightOf="@+id/touxiang3" />
+        //信息预览
+        <TextView
+            android:id="@+id/xinxiyulan3"
+            style="@style/xiaoxi_xinxiyulan"
+            android:text="@string/xinxi3"
+            android:layout_toRightOf="@+id/touxiang3"
+            android:layout_below="@+id/dianpu3"/>
+        //时间显示
+        <TextView
+            style="@style/xiaoxi_shijianxianshi"
+            android:text="@string/shijian3"/>
+    </RelativeLayout>
+
+    //分割线
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1.1dp"
+        android:background="#eeeeee"/>
+
+    //会话4
+    <RelativeLayout
+        android:id="@+id/huihua4"
+        style="@style/xiaoxi_huihua">
+        //头像
+        <com.example.taobao2.RoundImageViewByXfermode
+            android:id="@+id/touxiang4"
+            style="@style/xiaoxi_touxiang"
+            android:src="@mipmap/shenghuoguan"
+            android:layout_centerVertical="true"/>
+        //店铺名
+        <TextView
+            android:id="@+id/dianpu4"
+            style="@style/xiaoxi_dianpuming"
+            android:text="@string/dianpu4"
+            android:layout_toRightOf="@+id/touxiang4" />
+        //信息预览
+        <TextView
+            android:id="@+id/xinxiyulan4"
+            style="@style/xiaoxi_xinxiyulan"
+            android:text="@string/xinxi4"
+            android:layout_toRightOf="@+id/touxiang4"
+            android:layout_below="@+id/dianpu4"/>
+        //时间显示
+        <TextView
+            style="@style/xiaoxi_shijianxianshi"
+            android:text="@string/shijian4"/>
+    </RelativeLayout>
+
+    //分割线
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1.1dp"
+        android:background="#eeeeee"/>
+
+    //会话5
+    <RelativeLayout
+        android:id="@+id/huihua5"
+        style="@style/xiaoxi_huihua">
+        //头像
+        <com.example.taobao2.RoundImageViewByXfermode
+            android:id="@+id/touxiang5"
+            style="@style/xiaoxi_touxiang"
+            android:src="@mipmap/lvlian"
+            android:layout_centerVertical="true"/>
+        //店铺名
+        <TextView
+            android:id="@+id/dianpu5"
+            style="@style/xiaoxi_dianpuming"
+            android:text="@string/dianpu5"
+            android:layout_toRightOf="@+id/touxiang5" />
+        //信息预览
+        <TextView
+            android:id="@+id/xinxiyulan5"
+            style="@style/xiaoxi_xinxiyulan"
+            android:text="@string/xinxi5"
+            android:layout_toRightOf="@+id/touxiang5"
+            android:layout_below="@+id/dianpu5"/>
+        //时间显示
+        <TextView
+            style="@style/xiaoxi_shijianxianshi"
+            android:text="@string/shijian5"/>
+    </RelativeLayout>
+
+    //分割线
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1.1dp"
+        android:background="#eeeeee"/>
+
+
+
+
+
+</LinearLayout>

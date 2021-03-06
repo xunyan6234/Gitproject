@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.taobao2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".huihua5"></activity>
+        <activity android:name=".huihua4" />
+        <activity android:name=".huihua3" />
+        <activity android:name=".huihua2" />
+        <activity android:name=".huihua1" />
+        <activity android:name=".jipiaojiudian" />
+        <activity android:name=".taobaochihuo" />
+        <activity android:name=".alipaimai" />
+        <activity android:name=".lingtaojinbi" />
+        <activity android:name=".chongzhizhongxin" />
+        <activity android:name=".tianmaochaoshi" />
+        <activity android:name=".eleme" />
+        <activity android:name=".tianmaoguoji" />
+        <activity android:name=".jinribaokuan" />
+        <activity android:name=".tianmaoxinpin" />
+        <activity android:name=".hongbaoqiandao" />
+        <activity android:name=".tianmaojifen" />
+        <activity android:name=".hongbaoshengqianka" />
+        <activity android:name=".huiyuanzhongxin" />
+        <activity android:name=".quanbudingdan" />
+        <activity android:name=".tuikuan" />
+        <activity android:name=".pingjia" />
+        <activity android:name=".daifukuan" />
+        <activity android:name=".daifahuo" />
+        <activity android:name=".daishouhuo" />
+        <activity android:name=".MainActivity" android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".xunyan_welcome"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
