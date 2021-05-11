@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.zhubangshopingtest1.app.GoodsInfoActivity">
+
+    <!--标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/ib_good_info_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/top_bar_left_back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="商品详情"
+
+            android:textColor="#564c4c"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/tv_more_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/comm_share"
+            android:textColor="#b5b5b5" />
+    </LinearLayout>
+    <!--图片展示-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeee" />
+
+    <ImageView
+        android:id="@+id/iv_good_info_image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_good_info_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="【预售】《来年就交给你啦》珍藏画册 限量礼盒版"
+        android:textColor="#323427" />
+
+    <TextView
+        android:id="@+id/tv_good_info_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="预售截止 11 月 11 日
+        预售期为限量礼盒版，包括特制木盒 *1、画集 *1"
+        android:textColor="#767f86" />
+
+    <TextView
+        android:id="@+id/tv_good_info_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="￥150.00"
+        android:textColor="#ed3f3f"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="#eeee" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:text="互联网+竹子的平台——“竹产品综合服务平台的设计与实现”，把竹子销售
+        、农村人口就业、竹子教育等几个方面进行整合。
+        通过互联网的优势，无缝连接竹子种植户与竹子加工部门，实现竹子产销结合。该平台可为种竹农户提供竹子种植和初加工的教学资源，也为竹子加工部门在选竹、简化加工流程等方面提供优质服务。通过该平台，既解决了农村竹子资源浪费和人口就业问题，又带动了竹子产业的发展。"
+        android:textColor="#3c3d40" />
+
+
+    <!--底部-->
+    <LinearLayout
+        android:id="@+id/ll_goods_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/tv_good_info_callcenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_callserver_unpressed"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="联系客服"
+            android:textColor="#393b3e" />
+
+        <TextView
+            android:id="@+id/tv_good_info_collection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/good_uncollected"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="收藏"
+            android:textColor="#393b3e" />
+
+        <TextView
+            android:id="@+id/tv_good_info_cart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_good_detail_cart"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="购物车"
+            android:textColor="#393b3e" />
+
+        <Button
+            android:id="@+id/btn_good_info_addcart"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#4CAF50"
+            android:gravity="center"
+            android:text="加入购物车"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>

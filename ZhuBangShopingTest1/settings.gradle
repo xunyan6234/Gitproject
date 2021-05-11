@@ -1,0 +1,4 @@
+include ':app'
+rootProject.name = "ZhuBangShopingTest1"
+include ':banner'
+include ':AddSubView'
